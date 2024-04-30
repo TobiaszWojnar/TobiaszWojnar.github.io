@@ -1,0 +1,19 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  .cell{
+    font-size: 32px;
+    width: 160px;
+    place-items: center; 
+    display: grid; 
+  }
+
+  .separator {
+    width: 2px;
+    background-color: black;
+    margin: 5px;
+  }
+}

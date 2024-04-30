@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+
+  .content {
+    width: 100%;
+    justify-content: center;
+
+    .wedding-ceremony {
+      color: black;
+      h3 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .grill {
+      color: black;
+    }
+
+    h4 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

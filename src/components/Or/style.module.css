@@ -1,0 +1,20 @@
+.line-container {
+  display: flex;
+  align-items: center; /* Center text vertically */
+}
+
+.line {
+  flex: 1; /* Make the line fill available space */
+  height: 2px; /* Set line thickness */
+  margin: 0 10px; /* Add margin for spacing */
+  background-color: #683134;
+}
+
+.text {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+}

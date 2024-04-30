@@ -1,0 +1,24 @@
+.header {
+  justify-content: center;
+  width: 100%;
+  margin: 36;
+
+  h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    margin: 0px;
+  }
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+  }
+}

@@ -1,0 +1,17 @@
+.church {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    .separator {
+      width: 1px;
+      background-color: black;
+      margin: 5px;
+    }
+    .location {
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+    }
+}
