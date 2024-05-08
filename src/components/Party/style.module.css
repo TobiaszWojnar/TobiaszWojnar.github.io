@@ -1,35 +1,32 @@
 .container {
-    width: 100%;
+  width: 100%;
+  /* background-color: yellowgreen; */
+  justify-content: center;
+  display: flex;
 
   .content {
-    width: 100%;
-    justify-content: center;
+    width: var(--myWidth);
 
-    .switch{
+    h2 {
+      justify-content: center;
+      display: flex;
+    }
+
+    .switch {
       margin: 10px 0px;
       width: 100%;
       justify-content: center;
       display: flex;
-      .partyLabel{
+      .partyLabel {
         margin: 5px 20px;
       }
     }
 
-    .wedding-ceremony {
-      color: black;
+    .party-info {
       h3 {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
       }
-    }
-
-    .grill {
-      color: black;
-    }
-
-    h4 {
-      display: flex;
-      flex-wrap: wrap;
     }
   }
 }

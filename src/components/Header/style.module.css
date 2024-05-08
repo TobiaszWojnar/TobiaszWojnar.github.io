@@ -1,22 +1,36 @@
-.header {
-  justify-content: center;
+.container {
   width: 100%;
-  margin: 36;
+  height: 100vh;
 
-  h1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 48px;
-    margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('../../assets/papertexture-fixed.jpg');
+  background-size: cover;
+  background-position: center; 
+
+  .header {
+    padding: 32px 48px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--garnet);
+
+    h1 {
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+      justify-content: center;
+
+      font-family: "Caveat", cursive;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
   }
   p {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     margin: 0px;

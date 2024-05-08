@@ -1,4 +1,12 @@
-.church {
+.container {
+  width:100%;
+
+  h2 {
+    justify-content: center;
+    display: flex;
+  }
+
+  .church {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,4 +22,5 @@
       width: 100%;
       text-align: center;
     }
+  }
 }

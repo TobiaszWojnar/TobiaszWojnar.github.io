@@ -1,5 +1,32 @@
-:root{
-    --red: #b00;
-    --blue: #00b;
-    --myWidth: 640px;
+:root {
+  --sunflower: #ffc41d;
+  --garnet: #570008;
+  --brick: #d8460b;
+  --pumpkin: #ff7518;
+  --wood: #e8ddc5;
+
+  --myWidth: 640px;
+
+  font-family: "Average", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  h1 {
+    font-size: 76px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3{
+    font-size: 32px;
+  }
 }

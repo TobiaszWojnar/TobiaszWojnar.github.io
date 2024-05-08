@@ -13,7 +13,7 @@
 
   .separator {
     width: 2px;
-    background-color: black;
+    background-color: var(--garnet);
     margin: 5px;
   }
 }
