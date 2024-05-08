@@ -1,0 +1,27 @@
+.container {
+  --myHeight: 360px;
+
+  background-color: hsl(24, 86%, 46%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--myHeight);
+
+  .countdown{
+    padding-top: 50px;
+    height: var(--myHeight);
+    width: 100%;
+    background-image: url('../../assets/paper-old.png');
+    background-size: var(--myHeight);
+    background-position: center;
+    background-repeat: no-repeat; 
+
+    text-align: center; 
+    p{
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+  }
+}
