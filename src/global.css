@@ -1,9 +1,11 @@
 :root {
   --sunflower: #ffc41d;
   --garnet: #570008;
+  --crimson: #990000;
   --brick: #d8460b;
   --pumpkin: #ff7518;
-  --wood: #e8ddc5;
+  --myOrange: #c85103;
+  --wood: hsl(36, 64%, 64%);
 
   --myWidth: 640px;
 
@@ -28,5 +30,8 @@
   }
   h3{
     font-size: 32px;
+  }
+  p{
+      margin: 0px 10px;
   }
 }

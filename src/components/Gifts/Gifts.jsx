@@ -6,8 +6,10 @@ const Gifts = () => {
     <div className={s.container}>
       <div className={s.gifts}>
         <h2>Prezenty</h2>
-        Zamiast kwiatów prosimy o darowiznę na budowę ośrodka Fundacji Błękitny
-        Krzyż lub Centrum Chrześcijańskiego Nowe Betlejem.
+        <p>
+          Zamiast kwiatów prosimy o darowiznę na budowę ośrodka Fundacji
+          Błękitny Krzyż lub Centrum Chrześcijańskiego Nowe Betlejem.
+        </p>
         <div className={s.donation}>
           <div> Śląska Fundacja Błękitny Krzyż</div>
           <div> Mostowa 1, 43-300 Bielsko-Biała</div>
@@ -22,8 +24,11 @@ const Gifts = () => {
           <div> lub blikiem 518 484 741</div>
           <div> „Nowe Betlejem”</div>
         </div>
-        Będzie nam również niezwykle miło, jeśli zamiast prezentów zdecydujecie
-        się na symboliczną kopertę. Pomoże nam to w realizacji wspólnych planów.
+        <p>
+          Będzie nam również niezwykle miło, jeśli zamiast prezentów
+          zdecydujecie się na symboliczną kopertę. Pomoże nam to w realizacji
+          wspólnych planów.
+        </p>
       </div>
     </div>
   );
