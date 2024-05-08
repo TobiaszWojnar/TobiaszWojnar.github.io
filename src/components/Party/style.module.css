@@ -5,6 +5,16 @@
     width: 100%;
     justify-content: center;
 
+    .switch{
+      margin: 10px 0px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      .partyLabel{
+        margin: 5px 20px;
+      }
+    }
+
     .wedding-ceremony {
       color: black;
       h3 {

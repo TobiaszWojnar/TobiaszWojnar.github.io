@@ -4,6 +4,7 @@ import Or from "../Or/Or";
 const Gifts = () => {
   return (
     <div className={s.gifts}>
+      <h2>Prezenty</h2>
       Zamiast kwiatów prosimy o darowiznę na budowę ośrodka Fundacji Błękitny
       Krzyż lub Centrum Chrześcijańskiego Nowe Betlejem.
       <div className={s.donation}>
@@ -20,6 +21,10 @@ const Gifts = () => {
         <div> lub blikiem 518 484 741</div>
         <div> „Nowe Betlejem”</div>
       </div>
+
+
+      Będzie nam również niezwykle miło, jeśli zamiast prezentów zdecydujecie się na symboliczną kopertę.
+      Pomoże nam to w realizacji wspólnych planów.
     </div>
   );
 };
