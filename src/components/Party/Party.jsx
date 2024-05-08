@@ -49,30 +49,30 @@ const Party = () => {
 
   return (
     <div className={s.container}>
-        <div className={s.party}>
-          <h2>Dalsze świętowanie</h2>
-          <p>
-            Chcielibysmy wspólnie z wami kontunułować świętowanie, dlatego
-            zgodnie z treścią zaproszenia po zaślubinach zapraszamy was na:
-          </p>
-          <div className={s["switch-wrapper"]}>
-            <div className={s.partyLabel}>Przyjęcie weselne 12 X 2024</div>
-            <div>
-              <Switch
-                onChange={changePartyType}
-                checked={!partyType}
-                onColor="#ffc41d"
-                offColor="#da6110"
-                uncheckedIcon={false}
-                checkedIcon={false}
-              />
-            </div>
-            <div className={s.partyLabel}>Weselny Grill 19 X 2024</div>
+      <div className={s.party}>
+        <h2>Dalsze świętowanie</h2>
+        <p>
+          Chcielibysmy wspólnie z wami kontynuować świętowanie, dlatego zgodnie
+          z treścią zaproszenia po zaślubinach zapraszamy was na:
+        </p>
+        <div className={s["switch-wrapper"]}>
+          <div className={s.partyLabel}>Przyjęcie weselne 12 X 2024</div>
+          <div>
+            <Switch
+              onChange={changePartyType}
+              checked={!partyType}
+              onColor="#ffc41d"
+              offColor="#da6110"
+              uncheckedIcon={false}
+              checkedIcon={false}
+            />
           </div>
-          <WeddingCeremony shouldShow={partyType} />
-          <Grill shouldShow={!partyType} />
+          <div className={s.partyLabel}>Weselny Grill 19 X 2024</div>
         </div>
+        <WeddingCeremony shouldShow={partyType} />
+        <Grill shouldShow={!partyType} />
       </div>
+    </div>
   );
 };
 
