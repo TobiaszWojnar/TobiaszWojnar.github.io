@@ -1,0 +1,41 @@
+.main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--BackgroundColor);
+  height: calc(100vh -36px); /* TODO footer skips to the right*/
+}
+.nav {
+  width: 10%; /* Default width (responsive adjustment below) */
+  min-width: 160px; /* Minimum width */
+  background-color: var(--Second);
+  display: flex;
+  align-items: center;
+}
+.timelines_wrapper {
+  flex: 1; /* Takes remaining space */
+  background-color: var(--BackgroundColor);
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10%; 
+}
+.timelines {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .main {
+    flex-direction: column; /* Stack Nav above Timeline */
+  }
+
+  .nav {
+    width: 100%; /* Full width */
+  }
+
+  .timelines {
+    width: 100%; /* Full width */
+    overflow-y: auto;
+  }
+}

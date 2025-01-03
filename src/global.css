@@ -1,0 +1,9 @@
+body {
+  --BackgroundColor: #f2efe8;
+  --BackgroundColor80: rgba(242,239,232,0.8);
+  --Second: #e0e2dc;
+  --DarkRed: #570008;
+
+  
+  margin: 0;
+}

@@ -1,0 +1,32 @@
+.nav {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+}
+/* .wrapper{
+    width:100%;
+} */
+.title{
+    text-align: center;
+}
+.controls{
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center; /* Centers buttons vertically */
+    padding: 0 8px;
+    button {
+        width: 50%;
+        max-width: 120px;
+        background-color: var(--DarkRed);
+        border: 2px solid black;
+        margin: 5px;
+        color: var(--BackgroundColor);
+    }
+    input {
+        width: 45%;
+        max-width: 112px;
+        background-color: var(--BackgroundColor);
+        border: 2px solid var(--DarkRed);
+        margin: 5px;
+    }
+}
