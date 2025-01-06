@@ -13,7 +13,7 @@ const TimePeriod = ({
   longDescription,
   horizontal = true,
 }) => {
-  const selectorTitle = title.replace(/\s+/g, "-").replace(/[^\w\s]/gi, "");
+  const selectorTitle = '_'+title.replace(/\s+/g, "-").replace(/[^\w\s]/gi, "");
   return (
     <>
       <button

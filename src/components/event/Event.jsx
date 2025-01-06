@@ -17,7 +17,7 @@ const Event = ({
   longDescription,
   assets,
 }) => {
-  const selectorTitle = title.replace(/\s+/g, "-").replace(/[^\w\s]/gi, "");
+  const selectorTitle = '_'+title.replace(/\s+/g, "-").replace(/[^\w\s]/gi, "");
   return (
     <>
       <div className={s.wrapper} style={{ top: "45px", left: xOffset + "px" }}>
