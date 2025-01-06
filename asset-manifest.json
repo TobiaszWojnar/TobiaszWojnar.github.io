@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9bb2cdb0.css",
+    "main.js": "/static/js/main.fa61c9c4.js",
+    "static/media/book.svg": "/static/media/book.25ea2809c5355c05a3e205f95352c1e2.svg",
+    "static/media/atom.svg": "/static/media/atom.c435f1720466182b94c61037f29f1405.svg",
+    "static/media/paint.svg": "/static/media/paint.cbc7560b6fd1f83fd734204437924eb7.svg",
+    "static/media/us_presidents.csv": "/static/media/us_presidents.8a3ca7546368d47c74ae.csv",
+    "static/media/overview.csv": "/static/media/overview.3ebbc83d11ee1438676e.csv",
+    "static/media/polish_kings.csv": "/static/media/polish_kings.d09a5af135c6f9b35e1f.csv",
+    "static/media/trophy.svg": "/static/media/trophy.45c3dbf1a67dc53cb1f7732f66b40449.svg",
+    "static/media/university.svg": "/static/media/university.6b30eec82ec0101e8ff6f20d48bb9ea1.svg",
+    "static/media/molecule.svg": "/static/media/molecule.d5ec408a60be9e5fd1d39f4584c248b0.svg",
+    "static/media/quill.svg": "/static/media/quill.79e1b78db2bed91c7a65887e470ddea0.svg",
+    "static/media/telescope.svg": "/static/media/telescope.aec723d380bb188685a9420522d331fb.svg",
+    "static/media/microscope.svg": "/static/media/microscope.e0206912fe69c456c118f886d11b6d9c.svg",
+    "static/media/scholar.svg": "/static/media/scholar.f063199e73d18bd00fab179122a0abbb.svg",
+    "static/media/books.svg": "/static/media/books.173da2228e0ca155c01ebe2810a95a71.svg",
+    "static/media/president.svg": "/static/media/president.50c4395f977748b04f1869a99056dc22.svg",
+    "static/media/virus.svg": "/static/media/virus.4e98e8b5cc984359282f7e1b6f38585f.svg",
+    "static/media/idea.svg": "/static/media/idea.8bf05456a73e2260416801d111358d99.svg",
+    "static/media/test-tube.svg": "/static/media/test-tube.33eca1b7b23675e8e5678a4f42f313a3.svg",
+    "static/media/crown.svg": "/static/media/crown.db848ec42652b167a9eeeb80e85876c1.svg",
+    "static/media/person.svg": "/static/media/person.3dd8e798218b311a010b8499a1b9125e.svg",
+    "static/media/coin.svg": "/static/media/coin.3b1317a12e1b807ddfc0de6e0e8b01c5.svg",
+    "index.html": "/index.html",
+    "static/media/swords.svg": "/static/media/swords.49575c7c18f89c093fe3c9c81a6a553d.svg",
+    "static/media/shield.svg": "/static/media/shield.d9ce74128e89eb6d5d18986f76474e3a.svg",
+    "static/media/map.svg": "/static/media/map.1db40eaeebb45235c388a7db5fc91e0e.svg",
+    "static/media/star.svg": "/static/media/star.3066e70ff5cc3ac6ce0e0cf2a0095c70.svg",
+    "static/media/trend-down.svg": "/static/media/trend-down.b04e0e9df0fea47d8164c989c210d2ca.svg",
+    "main.9bb2cdb0.css.map": "/static/css/main.9bb2cdb0.css.map",
+    "main.fa61c9c4.js.map": "/static/js/main.fa61c9c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bb2cdb0.css",
+    "static/js/main.fa61c9c4.js"
+  ]
+}
