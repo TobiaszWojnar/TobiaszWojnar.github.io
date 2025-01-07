@@ -20,6 +20,8 @@ const Timeline = ({ events, zoomLvl, startDate, endDate }) => {
             icon={e.icon}
             xOffset={((e.year - startDate + 50) * zoomLvl) / 100}
             color={e.color}
+            shortDescription={e.shortDescription}
+            longDescription={e.longDescription}
           />
         ))}
       </div>

@@ -7,7 +7,7 @@ import s from "./style.module.css";
 
 const TimelineApp = () => {
   return (
-    <div className={s.main}>
+    <div className={s.main} id="timeline-app">
       <Main/>
       <Footer/>
     </div>

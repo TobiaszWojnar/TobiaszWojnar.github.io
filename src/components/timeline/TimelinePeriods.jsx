@@ -3,8 +3,23 @@ import TimePeriod from "../timePeriod/TimePeriod";
 import s from "./style.module.css";
 
 const TimelinePeriods = ({ zoomLvl, startDate, endDate }) => {
-  const colorPallet1 = ['rgb(24, 78, 119)','rgb(30, 96, 145)','rgb(26, 117, 159)','rgb(22, 138, 173)']; //["#184e77", "#1e6091", "#1a759f", "#168aad"];
-  const colorPallet2 = ['rgb(55, 6, 23)','rgb(106, 4, 15)','rgb(157, 2, 8)','rgb(208, 0, 0)'];//["#ff6d00", "#ff7900", "#ff8500", "#ff9100"];
+  // const colorPallet1 = ['rgb(24, 78, 119)','rgb(30, 96, 145)','rgb(26, 117, 159)','rgb(22, 138, 173)']; //["#184e77", "#1e6091", "#1a759f", "#168aad"];
+  // const colorPallet2 = ['rgb(55, 6, 23)','rgb(106, 4, 15)','rgb(157, 2, 8)','rgb(208, 0, 0)'];//["#ff6d00", "#ff7900", "#ff8500", "#ff9100"];
+  
+  // const colorPallet1 = ['rgba(0, 114, 255, 1)','rgba(0, 114, 255, 0.9)','rgba(0, 114, 255, 0.8)','rgba(0, 114, 255, 0.7)']; //["#184e77", "#1e6091", "#1a759f", "#168aad"];
+  // const colorPallet2 = ['rgba(230, 180, 0, 1)', 'rgba(230, 180, 0, 0.9)', 'rgba(230, 180, 0, 0.8)', 'rgba(230, 180, 0, 0.7)'];
+  
+  // const colorPallet1 = ['rgba(0, 91, 204, 1)','rgba(0, 91, 204, 0.9)','rgba(0, 91, 204, 0.8)','rgba(0, 91, 204, 0.7)']; //["#184e77", "#1e6091", "#1a759f", "#168aad"];
+  // const colorPallet2 = ['rgba(255, 141, 0, 1)', 'rgba(255, 141, 0, 0.9)', 'rgba(255, 141, 0, 0.8)', 'rgba(255, 141, 0, 0.7)'];
+  
+  // const colorPallet1 = ['rgba(9, 56, 36, 1)', 'rgba(9, 56, 36, 0.9)', 'rgba(9, 56, 36, 0.8)', 'rgba(9, 56, 36, 0.7)'];
+  // const colorPallet2 = ['rgba(255, 141, 0, 1)', 'rgba(255, 141, 0, 0.9)', 'rgba(255, 141, 0, 0.8)', 'rgba(255, 141, 0, 0.7)'];
+  
+  const colorPallet1 = ['rgba(9, 56, 36, 1)', 'rgba(9, 56, 36, 0.9)', 'rgba(9, 56, 36, 0.8)', 'rgba(9, 56, 36, 0.7)'];
+  const colorPallet2 = ['rgba(226, 78, 27, 1)', 'rgba(226, 78, 27, 0.9)', 'rgba(226, 78, 27, 0.8)', 'rgba(226, 78, 27, 0.7)'];
+  
+  // 4a2441
+
   const events = [
     {
       title: "Średniowiecze",
