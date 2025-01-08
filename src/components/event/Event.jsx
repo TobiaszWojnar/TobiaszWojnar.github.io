@@ -17,13 +17,25 @@ const Event = ({
   shortDescription,
   longDescription,
   assets,
+  isModalOpen,
+  setModalOpen,
+  setModalContent,
 }) => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const selectorTitle =
     "_" + title.replace(/\s+/g, "-").replace(/[^\w\s]/gi, "");
 
-  Modal.setAppElement("#timeline-app");
+  const renderModalContent = () => {
+    return (
+      <>
+        <h2>{title}</h2>
+        <p className={s.description}>{longDescription}</p>
+        <br />
+        <button onClick={() => setModalOpen(false)}>Close</button>
+      </>
+    );
+  };
+
   return (
     <>
       <div
@@ -31,7 +43,7 @@ const Event = ({
         style={{
           top: "45px",
           left: xOffset + "px",
-          zIndex: !modalIsOpen && isHovered ? 10 : "auto",
+          zIndex: !isModalOpen && isHovered ? 10 : "auto",
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -40,7 +52,10 @@ const Event = ({
           className={s.event}
           id={selectorTitle}
           style={{ backgroundColor: color }}
-          onClick={() => setModalIsOpen(true)}
+          onClick={() => {
+            setModalContent(renderModalContent());
+            setModalOpen(true);
+          }}
         >
           <IconRegistry iconName={icon} />
         </button>
@@ -50,12 +65,6 @@ const Event = ({
         <h2>{title}</h2>
         <p className={s.description}>{shortDescription}</p>
       </Tooltip>
-      <Modal isOpen={modalIsOpen}>
-      <h2>{title}</h2>
-        <p className={s.description}>{longDescription}</p>
-        <br />
-        <button onClick={() => setModalIsOpen(false)}>Close</button>
-      </Modal>
     </>
   );
 };

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import Modal from "react-modal";
 import * as Papa from "papaparse";
 import Timeline from "../timeline/Timeline";
 import TimelinePeriods from "../timeline/TimelinePeriods";
 import Nav from "../nav/Nav";
-// import events from "./../../data/events.csv";
 import polishKings from "./../../data/polish_kings.csv";
 import usPresidents from "./../../data/us_presidents.csv";
 import overview from "./../../data/overview.csv";
@@ -14,6 +14,8 @@ const Main = () => {
   const [zoomLvl, setZoomLvl] = useState(100);
   const [startDate, setStartDate] = useState(1025);
   const [endDate, setEndDate] = useState(2000);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState();
 
   const ARROW_KEY_MOVE_OFFSET = 50;
 
@@ -98,7 +100,6 @@ const Main = () => {
       >
         <div className={s.timelines}>
           <TimelinePeriods
-            // events={eventsData.filter((e) => e.tags.includes("poland"))}
             zoomLvl={zoomLvl}
             startDate={startDate}
             endDate={endDate}
@@ -108,21 +109,31 @@ const Main = () => {
             zoomLvl={zoomLvl}
             startDate={startDate}
             endDate={endDate}
+            isModalOpen={isModalOpen}
+            setModalOpen={setModalOpen}
+            setModalContent={setModalContent}
           />
           <Timeline
             events={eventsData.filter((e) => e.tags.includes("main"))}
             zoomLvl={zoomLvl}
             startDate={startDate}
             endDate={endDate}
+            isModalOpen={isModalOpen}
+            setModalOpen={setModalOpen}
+            setModalContent={setModalContent}
           />
           <Timeline
             events={eventsData.filter((e) => e.tags.includes("usa"))}
             zoomLvl={zoomLvl}
             startDate={startDate}
             endDate={endDate}
+            isModalOpen={isModalOpen}
+            setModalOpen={setModalOpen}
+            setModalContent={setModalContent}
           />
         </div>
       </div>
+      <Modal isOpen={isModalOpen}>{modalContent}</Modal>
     </main>
   );
 };

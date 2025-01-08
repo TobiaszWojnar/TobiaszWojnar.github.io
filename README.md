@@ -19,7 +19,7 @@
   * [ ] maximal date resize
   * [ ] hide sidebar button
 * [ ] Events
-  * [ ] Add modal onClick
+  * [X] Add modal onClick
 * [ ] Fix responsiveness - small laptop size
 * [ ] Timeline
   * [ ] Subdivision on timeline
@@ -58,6 +58,7 @@
 * [X] Generate events from csv
 
 # Backlog
+* simplify useStates
 * Fix responsiveness - small laptop size
 * sidebar 
   * fix inputting date

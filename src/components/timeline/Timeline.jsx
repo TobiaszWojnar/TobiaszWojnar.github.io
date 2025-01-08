@@ -2,7 +2,7 @@ import React from "react";
 import Event from "../event/Event";
 import s from "./style.module.css";
 
-const Timeline = ({ events, zoomLvl, startDate, endDate }) => {
+const Timeline = ({ events, zoomLvl, startDate, endDate, isModalOpen, setModalOpen, setModalContent}) => {
   return (
     <div className={s.wrapper}>
       <div className={s.timeline}>
@@ -22,6 +22,9 @@ const Timeline = ({ events, zoomLvl, startDate, endDate }) => {
             color={e.color}
             shortDescription={e.shortDescription}
             longDescription={e.longDescription}
+            isModalOpen={isModalOpen}
+            setModalOpen={setModalOpen}
+            setModalContent={setModalContent}
           />
         ))}
       </div>
