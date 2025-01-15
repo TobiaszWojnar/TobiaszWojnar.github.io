@@ -1,0 +1,45 @@
+.timeline {
+  /* TODO Alex should I extract that to have in one place? */
+  position: relative;
+}
+.line_wrapper {
+  padding: 0.3em 0;
+}
+
+.line {
+  position: absolute;
+  height: 0.125em;
+}
+
+.marker_wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marker {
+  height: 0.25em;
+  width: 0.25em;
+  background-color: var(--DarkRed);
+  transform: rotate(45deg) translateY(-50%);
+  border: 0.2em solid black;
+}
+.year {
+  position: absolute;
+  font-size: 1.5em;
+  margin: 0;
+}
+.up{
+  bottom: 1em;
+   color: var(--BackgroundColor);
+}
+
+.arrowhead {
+  /* TODO Arrowhead */
+  position: fixed;
+  right: 0;
+  transform: translatey(-0.45em);
+  border-left: 1em solid black;
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+}
