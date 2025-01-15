@@ -1,26 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import s from "./style.module.css";
+import classNames from "classnames";
 import { IconRegistry } from "./../IconRegistry";
 import { Tooltip } from "react-tooltip";
-import Modal from "react-modal";
-
+import { ModalContext } from "../timelineApp/TimelineApp";
+import {HORIZONTAL_OFFSET} from "../timeline/Timeline";
 const Event = ({
   label,
   title,
   icon,
   xOffset,
+  yOffset,
   year,
   color,
-  date,
-  tags,
-  photo,
   shortDescription,
   longDescription,
-  assets,
-  isModalOpen,
-  setModalOpen,
-  setModalContent,
 }) => {
+  const { isModalOpen, setModalOpen, setModalContent } =
+    useContext(ModalContext);
   const [isHovered, setIsHovered] = useState(false);
   const selectorTitle =
     "_" + title.replace(/\s+/g, "-").replace(/[^\w\s]/gi, "");
@@ -39,11 +36,13 @@ const Event = ({
   return (
     <>
       <div
-        className={s.wrapper}
+        className={classNames(
+          s.wrapper,
+          !isModalOpen && isHovered ? s.current : ""
+        )}
         style={{
-          top: "45px",
-          left: xOffset + "px",
-          zIndex: !isModalOpen && isHovered ? 10 : "auto",
+          top: yOffset * 0.5 + "em",
+          left: xOffset + HORIZONTAL_OFFSET + "px"
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -61,8 +60,10 @@ const Event = ({
         </button>
         <p className={s.label}>{label}</p>
       </div>
-      <Tooltip anchorSelect={`#${selectorTitle}`} style={{ zIndex: 11 }}>
-        <h2>{title}</h2>
+      <Tooltip anchorSelect={`#${selectorTitle}`} className="tooltip">
+        <h2>
+          {title} - {year}
+        </h2>
         <p className={s.description}>{shortDescription}</p>
       </Tooltip>
     </>

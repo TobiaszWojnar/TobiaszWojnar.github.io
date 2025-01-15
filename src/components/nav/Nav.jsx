@@ -1,25 +1,73 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import s from "./style.module.css";
+import { TimelineContext } from "../timelineApp/TimelineApp";
+import { FocusTrap } from "focus-trap-react";
+import classNames from "classnames";
 
-const Nav = ({ zoomLvl, setZoomLvl, startDate, setStartDate, endDate, setEndDate }) => {
-  // const [startDate, setStartDate] = useState(0);
+const Nav = ({ setZoomLvl, setStartDate, setEndDate }) => {
+  const { startDate, endDate, zoomLvl } = useContext(TimelineContext);
+  const [isExpanded, setExpanded] = useState(false);
   return (
-    <div className={s.nav}>
-      <div className={s.wrapper}>
-        <div className={s.title}>Zoom</div>
+    <FocusTrap
+      active={isExpanded}
+      focusTrapOptions={{ clickOutsideDeactivates: true }}
+    >
+      <div className={classNames(s.nav, isExpanded ? s.expanded : s.collapsed)}>
+        {isExpanded && (
+          <div className={s.wrapper}>
+            <div className={s.title}>Zoom</div>
+            <div className={s.controls}>
+              <button
+                className={s.button}
+                onClick={() => setZoomLvl((curr) => curr * 1.25)}
+              >
+                +
+              </button>
+              <button
+                className={s.button}
+                onClick={() => setZoomLvl((curr) => curr * 0.8)}
+                disabled={zoomLvl < 64}
+              >
+                -
+              </button>
+            </div>
+          </div>
+        )}
+        {isExpanded && (
+          <div className={s.wrapper}>
+            <div className={s.title}>Time period</div>
+            <div className={s.controls}>
+              <input
+                type="number"
+                id="startDate"
+                value={startDate}
+                onChange={(e) => setStartDate(e.target.value)}
+                max={2000}
+              />
+              <input
+                type="number"
+                id="endDate"
+                value={endDate}
+                onChange={(e) => setEndDate(e.target.value)}
+                max={2030}
+              />
+            </div>
+          </div>
+        )}
         <div className={s.controls}>
-          <button onClick={() => setZoomLvl(zoomLvl * 1.1)}>+</button>
-          <button onClick={() => setZoomLvl(zoomLvl * 0.9)}>-</button>
+          <button
+            className={classNames(
+              s.button,
+              isExpanded ? s.expanded : s.collapsed
+            )}
+            onClick={() => setExpanded((s) => !s)}
+            autoFocus
+          >
+            {isExpanded ? "<" : ">"}
+          </button>
         </div>
       </div>
-      <div className={s.wrapper}>
-        <div className={s.title}>Time period</div>
-        <div className={s.controls}>
-          <input type="number" id="startDate" value={startDate} onChange={e => setStartDate(e.nativeEvent.data)} />
-          <input type="number" id="endDate" value={endDate} onChange={e => setEndDate(e.nativeEvent.data)} />
-        </div>
-      </div>
-    </div>
+    </FocusTrap>
   );
 };
 

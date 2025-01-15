@@ -1,9 +1,41 @@
 body {
   --BackgroundColor: #f2efe8;
-  --BackgroundColor80: rgba(242,239,232,0.8);
-  --Second: #e0e2dc;
+  --BackgroundColor80: rgba(242, 239, 232, 0.8);
+  --BackgroundColor60: rgba(242, 239, 232, 0.6);
+  --BackgroundColor40: rgba(242, 239, 232, 0.4);
+  --BackgroundColor20: rgba(242, 239, 232, 0.2);
   --DarkRed: #570008;
 
-  
+  --Focus: solid rgba(230, 180, 0, 0.7);
+
+  --Eras2: rgba(226, 78, 27, 1);
+  --Eras1: rgba(9, 56, 36, 1);
+  --Eras3: #001f3f;
+  --ErasWar: var(--DarkRed);
+
   margin: 0;
+  background-color: var(--BackgroundColor);
 }
+.tooltip{
+  z-index: 11;
+}
+
+:focus {
+  outline: var(--Focus);
+}
+/* const colorPallet1 = ['rgb(24, 78, 119)','rgb(30, 96, 145)','rgb(26, 117, 159)','rgb(22, 138, 173)']; //["#184e77", "#1e6091", "#1a759f", "#168aad"];
+const colorPallet2 = ['rgb(55, 6, 23)','rgb(106, 4, 15)','rgb(157, 2, 8)','rgb(208, 0, 0)'];//["#ff6d00", "#ff7900", "#ff8500", "#ff9100"];
+
+const colorPallet1 = ['rgba(0, 114, 255, 1)','rgba(0, 114, 255, 0.9)','rgba(0, 114, 255, 0.8)','rgba(0, 114, 255, 0.7)']; //["#184e77", "#1e6091", "#1a759f", "#168aad"];
+const colorPallet2 = ['rgba(230, 180, 0, 1)', 'rgba(230, 180, 0, 0.9)', 'rgba(230, 180, 0, 0.8)', 'rgba(230, 180, 0, 0.7)'];
+
+const colorPallet1 = ['rgba(0, 91, 204, 1)','rgba(0, 91, 204, 0.9)','rgba(0, 91, 204, 0.8)','rgba(0, 91, 204, 0.7)']; //["#184e77", "#1e6091", "#1a759f", "#168aad"];
+const colorPallet2 = ['rgba(255, 141, 0, 1)', 'rgba(255, 141, 0, 0.9)', 'rgba(255, 141, 0, 0.8)', 'rgba(255, 141, 0, 0.7)'];
+
+const colorPallet1 = ['rgba(9, 56, 36, 1)', 'rgba(9, 56, 36, 0.9)', 'rgba(9, 56, 36, 0.8)', 'rgba(9, 56, 36, 0.7)'];
+const colorPallet2 = ['rgba(255, 141, 0, 1)', 'rgba(255, 141, 0, 0.9)', 'rgba(255, 141, 0, 0.8)', 'rgba(255, 141, 0, 0.7)'];
+
+const colorPallet1 = ['rgba(9, 56, 36, 1)', 'rgba(9, 56, 36, 0.9)', 'rgba(9, 56, 36, 0.8)', 'rgba(9, 56, 36, 0.7)'];
+const colorPallet2 = ['rgba(226, 78, 27, 1)', 'rgba(226, 78, 27, 0.9)', 'rgba(226, 78, 27, 0.8)', 'rgba(226, 78, 27, 0.7)'];
+
+4a2441 */

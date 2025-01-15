@@ -6,6 +6,6 @@ import TimelineApp from './components/timelineApp/TimelineApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TimelineApp />
+    <TimelineApp/>
   </React.StrictMode>
 );
