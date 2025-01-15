@@ -1,0 +1,11 @@
+label;title;startDate;endDate;colorSet;tags;
+Średniowiecze;Średniowiecze;476;1490;1;main;
+Renesans;Renesans;1490;1580;2;main;
+Barok;Barok;1580;1750;1;main;
+Oświecenie;Oświecenie / Klasycyzm;1750;1822;2;main;
+Romantyzm;Romantyzm;1822;1864;1;main;
+Pozytywizm;Pozytywizm;1864;1890;2;main;
+Młoda Polska;Młoda Polska;1890;1918;1;main;
+20 lecie;20-lecie Międzywojenne;1918;1939;2;main;
+II WŚ;II Wojna Światowa;1939;1945;War;main;
+Zimna Wojna;Zimna Wojna;1947;1989;3;main;
