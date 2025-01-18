@@ -15,12 +15,14 @@ export const TimelineContext = createContext(null);
 export const ModalContext = createContext(null);
 
 const TimelineApp = () => {
+  const DEFAULT_ZOOM_LVL = 250;
+
   const [eventsData, setEventsData] = useState([]);
   const [erasData, setErasData] = useState([]);
-  const [zoomLvl, setZoomLvl] = useState(250);
+  const [zoomLvl, setZoomLvl] = useState(DEFAULT_ZOOM_LVL);
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [tags, setTags] = useState();
   const [modalContent, setModalContent] = useState();
 
   useEffect(() => {
@@ -28,7 +30,8 @@ const TimelineApp = () => {
       csvFiles,
       setData,
       setMinDate,
-      setMaxDate
+      setMaxDate,
+      setTagList
     ) => {
       const promises = csvFiles.map(async (csvFile) => {
         try {
@@ -63,6 +66,10 @@ const TimelineApp = () => {
       if (setMinDate && setMaxDate) {
         setMinDate(Math.min(...allData.flat().map((e) => Number(e.year))));
         setMaxDate(Math.max(...allData.flat().map((e) => Number(e.year))));
+        
+      }
+      if(setTagList){
+        setTagList(Array.from(new Set(allData.flat().map((e) => e.tags).flat())).sort())
       }
     };
 
@@ -70,29 +77,28 @@ const TimelineApp = () => {
       [polishKings, usPresidents, peopleMain],
       setEventsData,
       setStartDate,
-      setEndDate
+      setEndDate,
+      setTags
     );
-    fetchAndMergeCSVData([eras], setErasData);
-    console.log("fetchAndMergeCSVData"); // TODO why runs twice
+    fetchAndMergeCSVData([eras], setErasData); // Runs twice in strict mode
   }, []);
 
   return (
     <TimelineContext.Provider value={{ zoomLvl, startDate, endDate }}>
-      <ModalContext.Provider
-        value={{ isModalOpen, setModalOpen, setModalContent }}
-      >
+      <ModalContext.Provider value={{ modalContent, setModalContent }}>
         <main className={s.main}>
-          <Modal isOpen={isModalOpen}>{modalContent}</Modal>
+          <Modal isOpen={modalContent}>{modalContent}</Modal>
           <Timeline events={eventsData} eras={erasData} />
         </main>
-        <div className={s.nav}>
-          <Nav
-            setStartDate={setStartDate}
-            setEndDate={setEndDate}
-            setZoomLvl={setZoomLvl}
-          />
-        </div>
       </ModalContext.Provider>
+      <div className={s.nav}>
+        <Nav
+          setStartDate={setStartDate}
+          setEndDate={setEndDate}
+          setZoomLvl={setZoomLvl}
+          tagList={tags}
+        />
+      </div>
     </TimelineContext.Provider>
   );
 };

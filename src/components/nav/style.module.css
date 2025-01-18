@@ -8,10 +8,17 @@
     transparent
   );
 }
+.wrapper{
+  margin: 1em 0;
+}
 .title {
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
+}
+.list{
+  padding: 0.5em;
+  text-wrap: balance;
 }
 .controls {
   display: flex;

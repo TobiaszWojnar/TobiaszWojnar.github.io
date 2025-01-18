@@ -4,7 +4,7 @@ import { TimelineContext } from "../timelineApp/TimelineApp";
 import { FocusTrap } from "focus-trap-react";
 import classNames from "classnames";
 
-const Nav = ({ setZoomLvl, setStartDate, setEndDate }) => {
+const Nav = ({ setZoomLvl, setStartDate, setEndDate, tagList }) => {
   const { startDate, endDate, zoomLvl } = useContext(TimelineContext);
   const [isExpanded, setExpanded] = useState(false);
   return (
@@ -13,6 +13,18 @@ const Nav = ({ setZoomLvl, setStartDate, setEndDate }) => {
       focusTrapOptions={{ clickOutsideDeactivates: true }}
     >
       <div className={classNames(s.nav, isExpanded ? s.expanded : s.collapsed)}>
+      <div className={s.controls}>
+          <button
+            className={classNames(
+              s.button,
+              isExpanded ? s.expanded : s.collapsed
+            )}
+            onClick={() => setExpanded((s) => !s)}
+            autoFocus
+          >
+            {isExpanded ? "<" : ">"}
+          </button>
+        </div>
         {isExpanded && (
           <div className={s.wrapper}>
             <div className={s.title}>Zoom</div>
@@ -54,18 +66,12 @@ const Nav = ({ setZoomLvl, setStartDate, setEndDate }) => {
             </div>
           </div>
         )}
-        <div className={s.controls}>
-          <button
-            className={classNames(
-              s.button,
-              isExpanded ? s.expanded : s.collapsed
-            )}
-            onClick={() => setExpanded((s) => !s)}
-            autoFocus
-          >
-            {isExpanded ? "<" : ">"}
-          </button>
-        </div>
+        {isExpanded && tagList && (
+          <div className={s.wrapper}>
+            <div className={s.title}>Tags</div>
+            <div className={s.list}>{tagList.join(', ')}</div>
+          </div>
+        )}
       </div>
     </FocusTrap>
   );

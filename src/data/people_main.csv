@@ -1,4 +1,4 @@
-label;title;icon;year;date;tags;shortDescription;
+label;title;icon;year;date;tags;shortDescription;assets
 Żiżka;Jan Żiżka;person;1420;;main,czech,church,cywilization,person;przywódca i strateg taborytów w czasie wojen husyckich. Czeski bohater narodowy.;
 Nostradamus;Michel de Nostredame;person;1550;;france,cywilization,person;francuski aptekarz, astrolog i autor proroctw, okultysta, mistyk, kabalista, badacz wiedzy tajemnej, doradca królowej Francji, Katarzyny Medycejskiej.;
 Gutemberg;Jan Gutemberg;scholar;1450;;main,germany,cywilization, science,person;niemiecki rzemieślnik, złotnik i drukarz, twórca pierwszej przemysłowej metody druku na świecie.;
@@ -39,3 +39,18 @@ Bin Laden;Osama Bin Laden;president;1988;;main,arab,person;1988 (Formation of al
 Hitler;Adolf Hitler;president;1933;;main,person,gremany,president;1933-1945 (Chancellor and Führer of Germany);
 Franklin;Benjamin Franklin;scholar;1776;;main,person,usa,science;1776 (Declaration of Independence);
 Maxwell;James Clerk Maxwell;scholar;1865;;main,person,england,science;1865 (Publication of A Dynamical Theory of the Electromagnetic Field);
+Descartes;René Descartes;person;1637;person,france,philosophy,science;"I think, therefore I am." 1637 (Publication of Discourse on the Method);;
+Kepler;Johannes Kepler;scholar;1609;person,german,science,astro;Wydanie Astronomia nova, ktra zawiera pierwsze dwa prawa keplera;;
+Kopernik;Mikołaj Kopernik;scholar;1543;person,poland,astro,science;1543 (Publication of De revolutionibus orbium coelestium) ;;
+Volta;Alessandro Volta;scholar;1800;person,italy,science;1800 (Invention of the voltaic pile, the first chemical battery) ;;
+Curie Skodowska;Maria Curie Skodowska;scholar;1898;person,poland,france,science,civilization;1898 (Discovery of radium and polonium) ;;
+Mariene Dietrich;Mariene Dietrich;culture;1930;person,culture,germany,usa,civilization;1930 - premiera The Blue Angel, pocztek międzynarodowej sławy;;
+Steve Jobs;Steve Jobs;person;1976;person,usa,company,civilization;1976 (Co-founded Apple Inc.) ;;
+Nelson Mandela;Nelson Mandela;president;1993;person,rpa,president,nobel,civilization;1993 Nobel Peace Prize;;
+Pierre de Couberin;Pierre de Couberin;culture;1896;person,france,culture,civilization;1896 (Revival of the modern Olympic Games);;
+Ian Flemnig;Ian Flemnig;culture;1953;person,england,culture,civilization;1953 (Publication of Casino Royale);;
+Gandhi;Mahatma Gandhi;president;1921;person,civilization,leader;Assuming leadership of the Indian National Congress in 1921;;
+Bill Gates;Bill Gates;person;1975;person,usa,company,civilization;1975 (Co-founded Microsoft);;
+Churchill;Winston Churchill;president;1900;person,leader,civilization,england;1900 fist elect to be Member of Parliament, than1940-45 Prime minister;;
+Einstein;Albert Einstein;scholar;1905;person,civilization,science,germany,switzerland;1905  Annus mirabilis - wydał 5 prac z fizyki;;
+Chaplin;Charliee Chaplin;culture;1914;person,civilization,culture,england;1914 pierwszy film gdzie wcielił się charaktersystyczną kreacje "The trump", melonik, mały wąsik itp;;
