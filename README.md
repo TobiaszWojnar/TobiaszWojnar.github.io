@@ -1,18 +1,35 @@
 # TODO in iterations
 
-## 8 TODO
-* Events
+## 9 TODO
+* [ ] Events
   * [ ] Start and end date on hover - eg. for people add date of birth and death
   * [ ] Add assets
     * [ ] img instead of icons
     * [ ] img
+  * [ ] Landmarks / Buildings?
+  * [ ] Inventions / Discoveries
+
+## 8 TODO
+* [ ] Data
+  * [ ] Check performance with many events
+  * [ ] Finish main people
+  * [ ] Update rest info about existing people
+  * [ ] Polish presidents
+  * [ ] Astronomers
+  * [ ] Almukantarat
+  * [ ] Composers
+  * [ ] Religion Reformers
+* [ ] Modal
+  * [ ] Plan how it should look
+  * [ ] Scrub data for modal
+* [ ] Tooltip
+  * [ ] Extract as component
   * [ ] Have one Tooltip?
-* [ ] Check performance with many events
-* [ ] Have fixed years to the top of the page if they don't fit && Add arowhead
-* [ ] Extract Tooltip as component
+* [ ] Timeline
+  * [ ] Have fixed years to the top of the page if they don't fit
+  * [ ] Add arrowhead
 
-
-## 7 TODO &check;
+## 7 &check;
 * [X] Fix dates synchronization
 * [X] Simplify css classes and conditional rendering
 * [X] Cleanup component structure
@@ -22,7 +39,7 @@
   * [X] timeline height calculated based on events inside // Idea abandoned
 * [X] Fix responsiveness - small laptop size
 
-## 6 TODO &check;
+## 6 &check;
 * [X] Sidebar 
   * [X] fix inputting date
   * [X] maximal date resize - Kind of
@@ -67,8 +84,6 @@
 * [X] Generate events from csv
 
 # Backlog
-* simplify useStates
-* useContext?
 * Events
   * Start and end date on hover - eg. for people add date of birth and death
   * Add assets
@@ -80,14 +95,11 @@
     * 3D assets - https://sketchfab.com/blogs/enterprise/news/getting-started-with-sketchfab
 * Timeline
   * timeline have its configuration
-  * z-index fix/simplify
-  * timeline height calculated based on events inside
 * Pick color theme
   * https://coolors.co/palettes/trending
   * https://coolors.co/palette/0466c8-0353a4-023e7d-002855-001845-001233-33415c-5c677d-7d8597-979dac
   * https://coolors.co/palette/ff6d00-ff7900-ff8500-ff9100-ff9e00-240046-3c096c-5a189a-7b2cbf-9d4eddhttps://coolors.co/palette/03071e-370617-6a040f-9d0208-d00000-dc2f02-e85d04-f48c06-faa307-ffba08
 * Add night view
-* Check performance with many events - useMemo?
 * Expandable events - with sub events connected to them
 * Ensure Accessibility
   * HTMLs tags
@@ -97,3 +109,5 @@
     * https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_meter
 * Properly use assets and cite sources
 * On open app it moves to more interesting place than midle ages
+* Navigatin by click and drop
+* use css BEM

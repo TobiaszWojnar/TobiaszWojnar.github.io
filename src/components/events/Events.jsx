@@ -3,23 +3,10 @@ import Event from "../event/Event";
 import { TimelineContext } from "../timelineApp/TimelineApp";
 import s from "./style.module.css";
 
-const Events = ({ events, filters, height }) => {
-  const { zoomLvl, startDate, endDate } = useContext(TimelineContext);
-  const filteredEvents = events
-    .filter((e) => startDate <= e.year + zoomLvl && e.year - zoomLvl <= endDate) // filter events outside of rendered area
-    .filter(
-      (e) =>
-        filters.include?.length === 0 ||
-        filters.include.every((tag) => e.tags.includes(tag))
-    )
-    .filter(
-      (e) =>
-        !filters.exclude ||
-        filters.exclude.length === 0 ||
-        !filters.exclude.some((tag) => e.tags.includes(tag))
-    );
+const Events = ({ events, height }) => {
+  const { zoomLvl, startDate } = useContext(TimelineContext);
 
-  const timeSlots = filteredEvents.reduce((timeSlots, e) => {
+  const timeSlots = events.reduce((timeSlots, e) => {
     const slot = Math.floor((e.year * zoomLvl) / 1000);
     if (!timeSlots[slot]) {
       timeSlots[slot] = [];

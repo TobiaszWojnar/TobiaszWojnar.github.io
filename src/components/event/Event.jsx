@@ -16,7 +16,7 @@ const Event = ({
   shortDescription,
   longDescription,
 }) => {
-  const { isModalOpen, setModalOpen, setModalContent } =
+  const { modalContent, setModalContent } =
     useContext(ModalContext);
   const [isHovered, setIsHovered] = useState(false);
   const selectorTitle =
@@ -28,7 +28,7 @@ const Event = ({
         <h2>{title}</h2>
         <p className={s.description}>{longDescription}</p>
         <br />
-        <button onClick={() => setModalOpen(false)}>Close</button>
+        <button onClick={() => setModalContent()}>Close</button>
       </>
     );
   };
@@ -38,7 +38,7 @@ const Event = ({
       <div
         className={classNames(
           s.wrapper,
-          !isModalOpen && isHovered ? s.current : ""
+          modalContent && isHovered ? s.current : ""
         )}
         style={{
           top: yOffset * 0.5 + "em",
@@ -52,8 +52,7 @@ const Event = ({
           id={selectorTitle}
           style={{ backgroundColor: color }}
           onClick={() => {
-            setModalContent(renderModalContent());
-            setModalOpen(true);
+            setModalContent(renderModalContent());// TODO check if it performs destruction of that code?
           }}
         >
           <IconRegistry iconName={icon} />
