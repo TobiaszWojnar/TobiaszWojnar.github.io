@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce912198.css",
-    "main.js": "/static/js/main.eb41e364.js",
-    "static/media/people_main.csv": "/static/media/people_main.718fb8b9a02c5c46a250.csv",
+    "main.css": "/static/css/main.d8b185f1.css",
+    "main.js": "/static/js/main.a666c2b3.js",
+    "static/media/people_main.csv": "/static/media/people_main.43d634e5f1876a73e360.csv",
     "static/media/us_presidents.csv": "/static/media/us_presidents.8a3ca7546368d47c74ae.csv",
-    "static/media/polish_kings.csv": "/static/media/polish_kings.d09a5af135c6f9b35e1f.csv",
+    "static/media/polish_kings.csv": "/static/media/polish_kings.bfcc2a4ec2af28e16c84.csv",
     "static/media/quill.svg": "/static/media/quill.79e1b78db2bed91c7a65887e470ddea0.svg",
     "static/media/culture.svg": "/static/media/culture.2741eca7a72748c07cad33acf183caf1.svg",
     "static/media/scholar.svg": "/static/media/scholar.f063199e73d18bd00fab179122a0abbb.svg",
@@ -15,11 +15,11 @@
     "index.html": "/index.html",
     "static/media/map.svg": "/static/media/map.1db40eaeebb45235c388a7db5fc91e0e.svg",
     "static/media/eras.csv": "/static/media/eras.b56f2286a2eda8ad418e.csv",
-    "main.ce912198.css.map": "/static/css/main.ce912198.css.map",
-    "main.eb41e364.js.map": "/static/js/main.eb41e364.js.map"
+    "main.d8b185f1.css.map": "/static/css/main.d8b185f1.css.map",
+    "main.a666c2b3.js.map": "/static/js/main.a666c2b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce912198.css",
-    "static/js/main.eb41e364.js"
+    "static/css/main.d8b185f1.css",
+    "static/js/main.a666c2b3.js"
   ]
 }
