@@ -1,6 +1,6 @@
 # TODO in iterations
 
-## 9 TODO
+## 10 TODO
 * [ ] Events
   * [ ] Start and end date on hover - eg. for people add date of birth and death
   * [ ] Add assets
@@ -9,7 +9,7 @@
   * [ ] Landmarks / Buildings?
   * [ ] Inventions / Discoveries
 
-## 8 TODO
+## 9 TODO
 * [ ] Data
   * [ ] Check performance with many events
   * [ ] Finish main people
@@ -28,6 +28,8 @@
 * [ ] Timeline
   * [ ] Have fixed years to the top of the page if they don't fit
   * [ ] Add arrowhead
+
+## 8 TypeScript & data model description &check;
 
 ## 7 &check;
 * [X] Fix dates synchronization
@@ -107,6 +109,7 @@
     * https://www.w3schools.com/tags/tag_title.asp
     * https://www.w3schools.com/tags/tag_select.asp
     * https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_meter
+  * Labels
 * Properly use assets and cite sources
 * On open app it moves to more interesting place than midle ages
 * Navigatin by click and drop
