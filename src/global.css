@@ -8,8 +8,10 @@ body {
 
   --Focus: solid rgba(230, 180, 0, 0.7);
 
-  --Eras2: rgba(226, 78, 27, 1);
+  --Event1: #001f3f;
+
   --Eras1: rgba(9, 56, 36, 1);
+  --Eras2: rgba(226, 78, 27, 1);
   --Eras3: #001f3f;
   --ErasWar: var(--DarkRed);
 
