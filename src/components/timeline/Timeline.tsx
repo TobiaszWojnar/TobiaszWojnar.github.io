@@ -1,35 +1,59 @@
-import React, { useRef, useContext, useMemo } from "react";
-import { TimelineContext } from "../timelineApp/TimelineApp";
-import Events from "../events/Events";
-import Eras from "../eras/Eras";
+import React, {
+  useRef,
+  useContext,
+  useMemo,
+  WheelEvent,
+  KeyboardEvent,
+} from "react";
+import { TimelineContext } from "../timelineApp/TimelineApp.tsx";
+import Events from "../events/Events.tsx";
+import Eras from "../eras/Eras.tsx";
 import Line from "../line/Line.tsx";
 import s from "./style.module.css";
+import { TimePeriodType, EventType } from "../types";
 
 export const HORIZONTAL_OFFSET = 50;
 
-const Timeline = ({ events, eras }) => {
+const Timeline = ({
+  events,
+  eras,
+}: {
+  events: EventType[];
+  eras: TimePeriodType[];
+}) => {
   const { zoomLvl, startDate, endDate } = useContext(TimelineContext);
   const ARROW_KEY_MOVE_OFFSET = zoomLvl / 2;
-  const wrapperRef = useRef(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
-  const handleWheel = (e) => {
+  const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
     // e.preventDefault();
-    wrapperRef.current.scrollLeft += e.deltaY;
+    if (wrapperRef.current) {
+      wrapperRef.current.scrollLeft += e.deltaY;
+    }
   };
-  const handleKey = (e) => {
-    switch (e.key) {
-      case "ArrowRight":
-        wrapperRef.current.scrollLeft += ARROW_KEY_MOVE_OFFSET;
-        break;
-      case "ArrowLeft":
-        wrapperRef.current.scrollLeft -= ARROW_KEY_MOVE_OFFSET;
-        break;
-      default:
-        break;
+  const handleKey = (e: KeyboardEvent<HTMLDivElement>) => {
+    if (wrapperRef.current) {
+      switch (e.key) {
+        case "ArrowRight":
+          wrapperRef.current.scrollLeft += ARROW_KEY_MOVE_OFFSET;
+          break;
+        case "ArrowLeft":
+          wrapperRef.current.scrollLeft -= ARROW_KEY_MOVE_OFFSET;
+          break;
+        default:
+          break;
+      }
     }
   };
 
-  const filterByTags = (events, filters) =>
+  const filterByTags = (
+    events: EventType[],
+    filters: {
+      includeEvery?: string[];
+      includeSome?: string[];
+      exclude?: string[];
+    }
+  ) =>
     events
       .filter(
         (e) =>
@@ -49,9 +73,9 @@ const Timeline = ({ events, eras }) => {
           filters.includeSome?.length === 0 ||
           filters.includeSome.some((tag) => e.tags.includes(tag))
       );
-  const filterByTime = (events) =>
+  const filterByTime = (events:EventType[]) =>
     events.filter(
-      (e) => startDate <= e.year + zoomLvl && e.year - zoomLvl <= endDate
+      (e) => startDate! <= e.year + zoomLvl && e.year - zoomLvl <= endDate!
     );
 
   const polishLeaders = useMemo(

@@ -2,16 +2,17 @@ import React from "react";
 import s from "./style.module.css";
 import classNames from "classnames";
 import { Tooltip } from "react-tooltip";
-import {HORIZONTAL_OFFSET} from "../timeline/Timeline"; 
+import {HORIZONTAL_OFFSET} from "../timeline/Timeline.tsx";
+import {TimePeriodPropType} from '../types.ts';
 
 const TimePeriod = ({
   label,
   title,
+  color,
   xOffset,
   widthH,
-  color,
   horizontal = true,
-}) => {
+}: TimePeriodPropType) => {
   const selectorTitle =
     "_" + title.replace(/\s+/g, "-").replace(/[^\w\s]/gi, "");
   return (

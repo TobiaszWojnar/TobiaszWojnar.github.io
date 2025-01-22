@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import Event from "../event/Event.tsx";
-import { TimelineContext } from "../timelineApp/TimelineApp";
+import { TimelineContext } from "../timelineApp/TimelineApp.tsx";
 import s from "./style.module.css";
+import {EventDataType} from '../types.ts';
 
 const Events = ({ events, height }) => {
   const { zoomLvl, startDate } = useContext(TimelineContext);
 
-  const timeSlots = events.reduce((timeSlots, e) => {
+  const timeSlots = events.reduce((timeSlots:EventDataType[][], e:EventDataType) => {
     const slot = Math.floor((e.year * zoomLvl) / 1000);
     if (!timeSlots[slot]) {
       timeSlots[slot] = [];
@@ -17,7 +18,7 @@ const Events = ({ events, height }) => {
 
   return (
     <div className={s.timeline} style={{ height }}>
-      {timeSlots.flatMap((slot) =>
+      {timeSlots.flatMap((slot:EventDataType[]) =>
         slot.map((e, index) => (
           <Event
             key={e.title}
@@ -25,9 +26,9 @@ const Events = ({ events, height }) => {
             title={e.title}
             year={e.year}
             icon={e.icon}
-            xOffset={((e.year - startDate) * zoomLvl) / 100}
+            xOffset={((e.year - startDate!) * zoomLvl) / 100}
             yOffset={index}
-            color={e.color}
+            color={e.colorSet?`var(--Eras${e.colorSet})`:'auto'}
             shortDescription={e.shortDescription}
             longDescription={e.longDescription}
           />

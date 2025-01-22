@@ -1,10 +1,12 @@
 import React, { useState, useContext } from "react";
 import s from "./style.module.css";
 import classNames from "classnames";
-import { IconRegistry } from "./../IconRegistry";
+import { IconRegistry } from "../IconRegistry.tsx";
 import { Tooltip } from "react-tooltip";
-import { ModalContext } from "../timelineApp/TimelineApp";
-import {HORIZONTAL_OFFSET} from "../timeline/Timeline";
+import { ModalContext } from "../timelineApp/TimelineApp.tsx";
+import {HORIZONTAL_OFFSET} from "../timeline/Timeline.tsx";
+import { EventPropType } from "../types.ts";
+
 const Event = ({
   label,
   title,
@@ -15,7 +17,7 @@ const Event = ({
   color,
   shortDescription,
   longDescription,
-}) => {
+}:EventPropType) => {
   const { modalContent, setModalContent } =
     useContext(ModalContext);
   const [isHovered, setIsHovered] = useState(false);
@@ -28,7 +30,7 @@ const Event = ({
         <h2>{title}</h2>
         <p className={s.description}>{longDescription}</p>
         <br />
-        <button onClick={() => setModalContent()}>Close</button>
+        <button onClick={() => setModalContent(null)}>Close</button>
       </>
     );
   };
