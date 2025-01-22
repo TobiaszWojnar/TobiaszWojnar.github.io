@@ -12,7 +12,7 @@
 ## 9 TODO
 * [ ] Data
   * [ ] Check performance with many events
-  * [ ] Finish main people
+  * [X] Finish main people
   * [ ] Update rest info about existing people
   * [ ] Polish presidents
   * [ ] Astronomers
