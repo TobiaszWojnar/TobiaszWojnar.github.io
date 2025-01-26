@@ -31,6 +31,7 @@ const Events = ({ events, height }) => {
             color={e.colorSet?`var(--Eras${e.colorSet})`:'auto'}
             shortDescription={e.shortDescription}
             longDescription={e.longDescription}
+            wikiLink={e.wikiLink}
           />
         ))
       )}

@@ -5,8 +5,8 @@ export type TimelineContextType = {
 };
 
 export type ModalContextType = {
-  modalContent: any;
-  setModalContent: React.Dispatch<React.SetStateAction<any>>;
+  detailedView: any;
+  setDetailedView: React.Dispatch<React.SetStateAction<any>>;
 };
 
 export type GenericEventType = {
@@ -19,6 +19,7 @@ export type EventType = GenericEventType & {
   year: number;
   shortDescription: string;
   longDescription: string;
+  wikiLink?:string;
 };
 
 export type EventDataType = EventType & {

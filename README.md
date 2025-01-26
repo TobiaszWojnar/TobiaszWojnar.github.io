@@ -1,6 +1,6 @@
 # TODO in iterations
 
-## 10 TODO
+## 11 TODO
 * [ ] Events
   * [ ] Start and end date on hover - eg. for people add date of birth and death
   * [ ] Add assets
@@ -9,12 +9,12 @@
   * [ ] Landmarks / Buildings?
   * [ ] Inventions / Discoveries
 
-## 9 TODO
+## 10 TODO
 * [ ] Data
   * [ ] Check performance with many events
   * [X] Finish main people
   * [ ] Update rest info about existing people
-  * [ ] Polish presidents
+  * [X] Polish presidents
   * [ ] Astronomers
   * [ ] Almukantarat
   * [ ] Composers
@@ -28,6 +28,17 @@
 * [ ] Timeline
   * [ ] Have fixed years to the top of the page if they don't fit
   * [ ] Add arrowhead
+
+## 9 TODO
+* [ ] Clean code
+  * [X] rename useEffect for fetching data
+  * [ ] extract constants outside components
+* [ ] Modal
+  * [X] Wiki
+  * [ ] keyboard capture
+* [ ] Data 
+  * [ ] Short text for presidents
+  * [ ] Wiki links
 
 ## 8 TypeScript & data model description &check;
 

@@ -10,16 +10,16 @@ import Events from "../events/Events.tsx";
 import Eras from "../eras/Eras.tsx";
 import Line from "../line/Line.tsx";
 import s from "./style.module.css";
-import { TimePeriodType, EventType } from "../types";
+import { TimePeriodDataType, EventDataType } from "../types";
 
 export const HORIZONTAL_OFFSET = 50;
 
 const Timeline = ({
   events,
-  eras,
+  timePeriods,
 }: {
-  events: EventType[];
-  eras: TimePeriodType[];
+  events: EventDataType[];
+  timePeriods: TimePeriodDataType[];
 }) => {
   const { zoomLvl, startDate, endDate } = useContext(TimelineContext);
   const ARROW_KEY_MOVE_OFFSET = zoomLvl / 2;
@@ -47,7 +47,7 @@ const Timeline = ({
   };
 
   const filterByTags = (
-    events: EventType[],
+    events: (EventDataType|TimePeriodDataType)[],
     filters: {
       includeEvery?: string[];
       includeSome?: string[];
@@ -73,7 +73,7 @@ const Timeline = ({
           filters.includeSome?.length === 0 ||
           filters.includeSome.some((tag) => e.tags.includes(tag))
       );
-  const filterByTime = (events:EventType[]) =>
+  const filterByTime = (events:EventDataType[]) =>
     events.filter(
       (e) => startDate! <= e.year + zoomLvl && e.year - zoomLvl <= endDate!
     );
@@ -152,6 +152,11 @@ const Timeline = ({
     [events]
   );
 
+  const mainEras = useMemo(()=>filterByTags(timePeriods, {
+    includeSome: ["main"],
+  }),
+[timePeriods])
+
   return (
     <div
       className={s.timelines}
@@ -159,18 +164,18 @@ const Timeline = ({
       onWheel={handleWheel}
       onKeyDown={handleKey}
     >
-      <Eras eras={eras} height={"10em"} />
+      <Eras eras={mainEras} height={"10em"} />
       <Line showDates="up" />
-      <Events events={filterByTime(mainLeaders)} height={"3em"} />
-      <Events events={filterByTime(mainNonLeaders)} height={"3em"} />
+      <Events events={filterByTime(mainLeaders)} height={"2.5em"} />
+      <Events events={filterByTime(mainNonLeaders)} height={"2.5em"} />
       <Events events={filterByTime(mainScience)} height={"6em"} />
       <Line />
-      <Events events={filterByTime(usaLeaders)} height={"4em"} />
-      <Events events={filterByTime(usaNonLeaders)} height={"3em"} />
+      <Events events={filterByTime(usaLeaders)} height={"2.5em"} />
+      <Events events={filterByTime(usaNonLeaders)} height={"2.5em"} />
       <Events events={filterByTime(usaScience)} height={"6em"} />
       <Line />
-      <Events events={filterByTime(polishLeaders)} height={"3em"} />
-      <Events events={filterByTime(polishNonLeaders)} height={"3em"} />
+      <Events events={filterByTime(polishLeaders)} height={"2.5em"} />
+      <Events events={filterByTime(polishNonLeaders)} height={"2.5em"} />
       <Events events={filterByTime(polishScience)} height={"6em"} />
     </div>
   );
