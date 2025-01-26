@@ -5,24 +5,58 @@ const DetailedView = ({ content, setContent }) => {
   if (!content) {
     return <></>;
   }
-  const { title, wikiLink, longDescription } = content;
+  const { title, wikiLink, description } = content;
+  const renderHeader = () => {
+    return (
+      <>
+        <div
+          className="header"
+          style={{ display: "flex", justifyContent: "space-between" }}
+        >
+          <h1>{title}</h1>
+          <button
+            onClick={() => setContent(null)}
+            autoFocus
+            style={{
+              width: "2em",
+              height: "2em",
+              backgroundColor: "var(--DarkRed)",
+              border: "0.25em solid black",
+              margin: "0.25em",
+              color: "var(--BackgroundColor)",
+              fontSize: "0.8em",
+            }}
+          >
+            X
+          </button>
+        </div>
+      </>
+    );
+  };
+
   const renderDescription = () => {
-    return longDescription ? (
-      <p className="description">{longDescription}</p>
+    return description ? (
+      <>
+        <p className="description">{description}</p>
+        <br />
+      </>
     ) : (
       <></>
     );
   };
   const renderWikiFrame = () => {
     return wikiLink ? (
-      <div className="frame-wrapper" style={{ flexGrow: 1 }}>
-        <iframe
-          title={title}
-          src={`${wikiLink}#mw-content-text`}
-          style={{ width: "100%", height: "100%", border: "none" }}
-          autoFocus
-        />
-      </div>
+      <>
+        <div className="frame-wrapper" style={{ flexGrow: 1 }}>
+          <iframe
+            title={title}
+            src={`${wikiLink}#mw-content-text`}
+            style={{ width: "100%", height: "100%", border: "none" }}
+            autoFocus
+          />
+        </div>
+        <br />
+      </>
     ) : (
       <></>
     );
@@ -33,23 +67,9 @@ const DetailedView = ({ content, setContent }) => {
         className="modal-wrapper"
         style={{ height: "100%", display: "flex", flexDirection: "column" }}
       >
-        <div
-          className="header"
-          style={{ display: "flex", justifyContent: "space-between" }}
-        >
-          <h2>{title}</h2>
-          <button
-            onClick={() => setContent(null)}
-            autoFocus
-            style={{ width: "1em", height: "1em" }}
-          >
-            X
-          </button>
-        </div>
+        {renderHeader()}
         {renderDescription()}
-        <br />
         {renderWikiFrame()}
-        <br />
       </div>
     </Modal>
   );
