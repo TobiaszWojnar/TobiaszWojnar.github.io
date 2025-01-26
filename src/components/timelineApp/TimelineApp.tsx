@@ -1,5 +1,5 @@
 import React, { useState, createContext, useEffect } from "react";
-import useFetchCSV from "../useFetchCSV";
+import useFetchCSV from "../useFetchCSV.ts";
 import Modal from "react-modal";
 import DetailedView from "../detailedView/DetailedView.tsx";
 import Nav from "../nav/Nav.tsx";

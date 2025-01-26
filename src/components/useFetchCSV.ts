@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
+import {EventDataType,TimePeriodDataType} from './types.ts'
 import * as Papa from "papaparse";
 
-const useFetchCSV = (eventsSources, timePeriodsSources) => {
+const useFetchCSV = (eventsSources: any[], timePeriodsSources: any[]) => {
   const [eventsData, setEventsData] = useState([])
   const [timePeriodsData, setTimePeriodsData] = useState([])
-  const [minDate, setMinDate] = useState();
-  const [maxDate, setMaxDate] = useState();
-  const [tags, setTags] = useState([])
-  const [loading, setLoading] = useState(null);
-  const [error, setError] = useState(null);
+  const [minDate, setMinDate] = useState<number>();
+  const [maxDate, setMaxDate] = useState<number>();
+  const [tags, setTags] = useState<string[]>([])
+  const [loading, setLoading] = useState<string|boolean>(false);
+  const [error, setError] = useState<object|boolean>(false);
 
-  const removeQuotes = (str) => {
+  const removeQuotes = (str: string) => {
     if (str.startsWith('"') && str.endsWith('"')) {
       return str.slice(1, -1);
     } else if (str.startsWith("'") && str.endsWith("'")) {
@@ -19,27 +20,26 @@ const useFetchCSV = (eventsSources, timePeriodsSources) => {
       return str;
     }
   }
-  
 
-  const parseCSVData = (csvData) => {
+  const parseCSVData = (csvData: any) => {
     return Papa.parse(csvData, {
       header: true,
       skipEmptyLines: true,
-      transformHeader: (header) => header.trim(),
-    }).data.map((e) => {
+      transformHeader: (header: string) => header.trim(),
+    }).data.map((e: any) => {
       return {
         ...Object.fromEntries(
           Object.entries(e).map(([key, value]) => [
             key,
-            removeQuotes((value).trim()),//TODO if wrapped in " or ' than 
+            removeQuotes((value as string).trim()),
           ])
         ),
-        tags: e.tags.split(",").map((tag) => tag.trim()),
+        tags: e.tags.split(",").map((tag: string) => tag.trim()),
       };
     });
   }
 
-  const setMinMaxDates = (eventsData) => {
+  const setMinMaxDates = (eventsData: EventDataType[]) => {
     setMinDate(
       Math.min(
         ...eventsData.flat().map((e) => Number((e).year))
@@ -49,7 +49,7 @@ const useFetchCSV = (eventsSources, timePeriodsSources) => {
         ...eventsData.flat().map((e) => Number((e).year))
       ));
   }
-  const mergeTags = (newData, oldData) => {
+  const mergeTags = (newData: (EventDataType|TimePeriodDataType)[], oldData: string[]) => {
     return Array.from(
       (new Set(
         [...newData
@@ -63,7 +63,7 @@ const useFetchCSV = (eventsSources, timePeriodsSources) => {
     const fetchCSVData = async (
       csvFiles,
       setData,
-      setMinMax
+      setMinMax = false
     ) => {
       setLoading('Loading...')
       const promises = csvFiles.map(async (csvFile) => {
@@ -79,7 +79,7 @@ const useFetchCSV = (eventsSources, timePeriodsSources) => {
           return parsedData;
         } catch (error) {
           setLoading(false);
-          setError(`Error fetching data from ${csvFile}:`, error);
+          setError({message: `Error fetching data from ${csvFile}:`, error});
         }
       });
 
