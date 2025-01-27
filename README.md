@@ -1,33 +1,58 @@
 # TODO in iterations
 
-## 11 TODO
+## 18 TODO
 * [ ] Events
   * [ ] Start and end date on hover - eg. for people add date of birth and death
   * [ ] Add assets
     * [ ] img instead of icons
     * [ ] img
-  * [ ] Landmarks / Buildings?
   * [ ] Inventions / Discoveries
 
-## 10 TODO
+## 17 TODO
 * [ ] Data
   * [ ] Check performance with many events
-  * [X] Finish main people
-  * [ ] Update rest info about existing people
-  * [X] Polish presidents
-  * [ ] Astronomers
-  * [ ] Almukantarat
   * [ ] Composers
   * [ ] Religion Reformers
-* [ ] Modal
-  * [ ] Plan how it should look
-  * [ ] Scrub data for modal
 * [ ] Tooltip
   * [ ] Extract as component
   * [ ] Have one Tooltip?
 * [ ] Timeline
   * [ ] Have fixed years to the top of the page if they don't fit
   * [ ] Add arrowhead
+* [ ] Detailed view
+  * [ ] Make description & wiki frame scrollable together
+
+## 16 Landmarks / Buildings
+* [ ] Cywilizacja
+* [ ] Assasin's creed
+
+## 15 Data
+* [ ] Historia Świata ksiązka
+
+## 14 Data TODO
+* [ ] Mathematics
+* [ ] Physics
+* [ ] Chemistry - all elements
+* [ ] Computer Science
+
+## 13 Data TODO
+* [ ] Europe Dynasties - time periods - england, polish
+
+## 12 Data TODO
+* [ ] Wielka księga wynalazków
+
+## 11 Data TODO
+* [ ] bardzo ilustrowana historia nauki
+
+## 10 Data TODO
+* [ ] Pln
+  * [ ] years, icon, tags, label, 
+  * [ ] short description
+  * [ ] wiki links
+* [ ] Astronomers
+  * [ ] years, icon, tags, label, 
+  * [ ] short description
+  * [ ] wiki links
 
 ## 9 TODO
 * [ ] Clean code
@@ -35,10 +60,20 @@
   * [ ] extract constants outside components
 * [ ] Modal
   * [X] Wiki
-  * [ ] keyboard capture
-* [ ] Data 
-  * [ ] Short text for presidents
-  * [ ] Wiki links
+  * [X] Add style
+  * [ ] extract style
+  * [ ] keyboard capture - exit on esc
+* [ ] Data
+  * [ ] Short text
+    * [X] pln presidents
+    * [X] pln kings
+    * [ ] pln presidents
+    * [ ] us presidents
+  * [X] Wiki links
+    * [X] main
+    * [X] pln kings
+    * [ ] pln presidents
+    * [ ] us presidents
 
 ## 8 TypeScript & data model description &check;
 
