@@ -67,12 +67,12 @@
   * [ ] Short text
     * [X] pln presidents
     * [X] pln kings
-    * [ ] pln presidents
+    * [X] pln presidents
     * [ ] us presidents
   * [X] Wiki links
     * [X] main
     * [X] pln kings
-    * [ ] pln presidents
+    * [X] pln presidents
     * [ ] us presidents
 
 ## 8 TypeScript & data model description &check;
