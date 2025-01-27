@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3183cd5.css",
-    "main.js": "/static/js/main.231f7602.js",
+    "main.css": "/static/css/main.b3facbb2.css",
+    "main.js": "/static/js/main.e4b02348.js",
     "static/media/people_main.csv": "/static/media/people_main.e191581102ed9b90891b.csv",
     "static/media/polish_presidents.csv": "/static/media/polish_presidents.37fd0b98c958821ac968.csv",
     "static/media/us_presidents.csv": "/static/media/us_presidents.79721cb43c1588d2b3fb.csv",
@@ -16,11 +16,11 @@
     "index.html": "/index.html",
     "static/media/map.svg": "/static/media/map.1db40eaeebb45235c388a7db5fc91e0e.svg",
     "static/media/eras.csv": "/static/media/eras.b56f2286a2eda8ad418e.csv",
-    "main.a3183cd5.css.map": "/static/css/main.a3183cd5.css.map",
-    "main.231f7602.js.map": "/static/js/main.231f7602.js.map"
+    "main.b3facbb2.css.map": "/static/css/main.b3facbb2.css.map",
+    "main.e4b02348.js.map": "/static/js/main.e4b02348.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3183cd5.css",
-    "static/js/main.231f7602.js"
+    "static/css/main.b3facbb2.css",
+    "static/js/main.e4b02348.js"
   ]
 }
