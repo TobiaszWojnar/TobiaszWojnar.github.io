@@ -64,16 +64,16 @@
   * [ ] extract style
   * [ ] keyboard capture - exit on esc
 * [ ] Data
-  * [ ] Short text
+  * [X] Short text
     * [X] pln presidents
     * [X] pln kings
     * [X] pln presidents
-    * [ ] us presidents
+    * [X] us presidents
   * [X] Wiki links
     * [X] main
     * [X] pln kings
     * [X] pln presidents
-    * [ ] us presidents
+    * [X] us presidents
 
 ## 8 TypeScript & data model description &check;
 

@@ -1,45 +1,48 @@
-label;title;icon;year;date;tags
-Washington;George Washington;president;1789;30/04/1789;usa,president
-J. Adams;John Adams;president;1797;4/03/1797;usa,president
-Jefferson;Thomas Jefferson;president;1801;4/03/1801;usa,president
-Madison;James Madison;president;1809;4/03/1809;usa,president
-Monroe;James Monroe;president;1817;4/03/1817;usa,president
-J.Q. Adams;John Quincy Adams;president;1825;4/03/1825;usa,president
-Jackson;Andrew Jackson;president;1829;4/03/1829;usa,president
-Buren;Martin Van Buren;president;1837;4/03/1837;usa,president
-W.H. Harrison;William Henry Harrison;president;1841;4/03/1841;usa,president
-Tyler;John Tyler;president;1841;4/04/1841;usa,president
-Polk;James K. Polk;president;1845;4/03/1845;usa,president
-Taylor;Zachary Taylor;president;1849;4/03/1849;usa,president
-Fillmore;Millard Fillmore;president;1850;9/07/1850;usa,president
-Pierce;Franklin Pierce;president;1853;4/03/1853;usa,president
-Buchanan;James Buchanan;president;1857;4/03/1857;usa,president
-Lincoln;Abraham Lincoln;president;1861;4/03/1861;usa,president
-Johnson;Andrew Johnson;president;1865;15/04/1865;usa,president
-Grant;Ulysses S. Grant;president;1869;4/03/1869;usa,president
-Hayes;Rutherford B. Hayes;president;1877;4/03/1877;usa,president
-Garfield;James A. Garfield;president;1881;4/03/1881;usa,president
-Arthur;Chester A. Arthur;president;1881;19/09/1881;usa,president
-Cleveland;Grover Cleveland;president;1885;4/03/1885;usa,president
-B. Harrison;Benjamin Harrison;president;1889;4/03/1889;usa,president
-Cleveland;Grover Cleveland (2nd term);president;1893;4/03/1893;usa,president
-McKinley;William McKinley;president;1897;4/03/1897;usa,president
-Roosevelt;Theodore Roosevelt;president;1901;14/9/1901;usa,president
-Taft;William Howard Taft;president;1909;4/3/1909;usa,president
-Wilson;Woodrow Wilson;president;1913;4/03/1913;usa,president
-Harding;Warren G. Harding;president;1921;4/03/1921;usa,president
-Coolidge;Calvin Coolidge;president;1923;2/8/1923;usa,president
-Hoover;Herbert Hoover;president;1929;4/03/1929;usa,president
-Roosevelt;Franklin D. Roosevelt;president;1933;4/03/1933;usa,president
-Truman;Harry S. Truman;president;1945;12/4/1945;usa,president
-Eisenhower;Dwight D. Eisenhower;president;1953;20/01/1953;usa,president
-Kennedy;John F. Kennedy;president;1961;20/01/1961;usa,president
-Johnson;Lyndon B. Johnson;president;1963;22/11/1963;usa,president
-Nixon;Richard Nixon;president;1969;20/1/1969;usa,president
-Ford;Gerald Ford;president;1974;9/8/1974;usa,president
-Carter;Jimmy Carter;president;1977;20/01/1977;usa,president
-Reagan;Ronald Reagan;president;1981;20/01/1981;usa,president
-Bush;George H. W. Bush;president;1989;20/01/1989;usa,president
-Clinton;Bill Clinton;president;1993;20/01/1993;usa,president
-Bush;George W. Bush;president;2001;20/01/2001;usa,president
-Obama;Barack Obama;president;2009;20/01/2009;usa,president
+title;label;icon;year;tags;shortDescription;longDescription;wikiLink;date
+George Washington;Washington;president;1789;usa,president,person;President of USA since 30/04/1789;;https://en.wikipedia.org/wiki/George_Washington;30/04/1789
+John Adams;J. Adams;president;1797;usa,president,person;President of USA since 4/03/1797;;https://en.wikipedia.org/wiki/John_Adams;4/03/1797
+Thomas Jefferson;Jefferson;president;1801;usa,president,person;President of USA since 4/03/1801;;https://en.wikipedia.org/wiki/Thomas_Jefferson;4/03/1801
+James Madison;Madison;president;1809;usa,president,person;President of USA since 4/03/1809;;https://en.wikipedia.org/wiki/James_Madison;4/03/1809
+James Monroe;Monroe;president;1817;usa,president,person;President of USA since 4/03/1817;;https://en.wikipedia.org/wiki/James_Monroe;4/03/1817
+John Quincy Adams;J.Q. Adams;president;1825;usa,president,person;President of USA since 4/03/1825;;https://en.wikipedia.org/wiki/John_Quincy_Adams;4/03/1825
+Andrew Jackson;Jackson;president;1829;usa,president,person;President of USA since 4/03/1829;;https://en.wikipedia.org/wiki/Andrew_Jackson;4/03/1829
+Martin Van Buren;Buren;president;1837;usa,president,person;President of USA since 4/03/1837;;https://en.wikipedia.org/wiki/Martin_Van_Buren;4/03/1837
+William Henry Harrison;W.H. Harrison;president;1841;usa,president,person;President of USA since 4/03/1841;;https://en.wikipedia.org/wiki/William_Henry_Harrison;4/03/1841
+John Tyler;Tyler;president;1841;usa,president,person;President of USA since 4/04/1841;;https://en.wikipedia.org/wiki/John_Tyler;4/04/1841
+James K. Polk;Polk;president;1845;usa,president,person;President of USA since 4/03/1845;;https://en.wikipedia.org/wiki/James_K._Polk;4/03/1845
+Zachary Taylor;Taylor;president;1849;usa,president,person;President of USA since 4/03/1849;;https://en.wikipedia.org/wiki/Zachary_Taylor;4/03/1849
+Millard Fillmore;Fillmore;president;1850;usa,president,person;President of USA since 9/07/1850;;https://en.wikipedia.org/wiki/Millard_Fillmore;9/07/1850
+Franklin Pierce;Pierce;president;1853;usa,president,person;President of USA since 4/03/1853;;https://en.wikipedia.org/wiki/Franklin_Pierce;4/03/1853
+James Buchanan;Buchanan;president;1857;usa,president,person;President of USA since 4/03/1857;;https://en.wikipedia.org/wiki/James_Buchanan;4/03/1857
+Abraham Lincoln;Lincoln;president;1861;usa,president,person;President of USA since 4/03/1861;;https://en.wikipedia.org/wiki/Abraham_Lincoln;4/03/1861
+Andrew Johnson;Johnson;president;1865;usa,president,person;President of USA since 15/04/1865;;https://en.wikipedia.org/wiki/Andrew_Johnson;15/04/1865
+Ulysses S. Grant;Grant;president;1869;usa,president,person;President of USA since 4/03/1869;;https://en.wikipedia.org/wiki/Ulysses_S._Grant;4/03/1869
+Rutherford B. Hayes;Hayes;president;1877;usa,president,person;President of USA since 4/03/1877;;https://en.wikipedia.org/wiki/Rutherford_B._Hayes;4/03/1877
+James A. Garfield;Garfield;president;1881;usa,president,person;President of USA since 4/03/1881;;https://en.wikipedia.org/wiki/James_A._Garfield;4/03/1881
+Chester A. Arthur;Arthur;president;1881;usa,president,person;President of USA since 19/09/1881;;https://en.wikipedia.org/wiki/Chester_A._Arthur;19/09/1881
+Grover Cleveland;Cleveland;president;1885;usa,president,person;President of USA since 4/03/1885;;https://en.wikipedia.org/wiki/Grover_Cleveland;4/03/1885
+Benjamin Harrison;B. Harrison;president;1889;usa,president,person;President of USA since 4/03/1889;;https://en.wikipedia.org/wiki/Benjamin_Harrison;4/03/1889
+Grover Cleveland (2nd term);Cleveland;president;1893;usa,president,person;President of USA since 4/03/1893;;https://en.wikipedia.org/wiki/Grover_Cleveland;4/03/1893
+William McKinley;McKinley;president;1897;usa,president,person;President of USA since 4/03/1897;;https://en.wikipedia.org/wiki/William_McKinley;4/03/1897
+Theodore Roosevelt;Roosevelt;president;1901;usa,president,person;President of USA since 14/9/1901;;https://en.wikipedia.org/wiki/Theodore_Roosevelt;14/9/1901
+William Howard Taft;Taft;president;1909;usa,president,person;President of USA since 4/3/1909;;https://en.wikipedia.org/wiki/William_Howard_Taft;4/3/1909
+Woodrow Wilson;Wilson;president;1913;usa,president,person;President of USA since 4/03/1913;;https://en.wikipedia.org/wiki/Woodrow_Wilson;4/03/1913
+Warren G. Harding;Harding;president;1921;usa,president,person;President of USA since 4/03/1921;;https://en.wikipedia.org/wiki/Warren_G._Harding;4/03/1921
+Calvin Coolidge;Coolidge;president;1923;usa,president,person;President of USA since 2/8/1923;;https://en.wikipedia.org/wiki/Calvin_Coolidge;2/8/1923
+Herbert Hoover;Hoover;president;1929;usa,president,person;President of USA since 4/03/1929;;https://en.wikipedia.org/wiki/Herbert_Hoover;4/03/1929
+Franklin D. Roosevelt;Roosevelt;president;1933;usa,president,person;President of USA since 4/03/1933;;https://en.wikipedia.org/wiki/Franklin_D._Roosevelt;4/03/1933
+Harry S. Truman;Truman;president;1945;usa,president,person;President of USA since 12/4/1945;;https://en.wikipedia.org/wiki/Harry_S._Truman;12/4/1945
+Dwight D. Eisenhower;Eisenhower;president;1953;usa,president,person;President of USA since 20/01/1953;;https://en.wikipedia.org/wiki/Dwight_D._Eisenhower;20/01/1953
+John F. Kennedy;Kennedy;president;1961;usa,president,person;President of USA since 20/01/1961;;https://en.wikipedia.org/wiki/John_F._Kennedy;20/01/1961
+Lyndon B. Johnson;Johnson;president;1963;usa,president,person;President of USA since 22/11/1963;;https://en.wikipedia.org/wiki/Lyndon_B._Johnson;22/11/1963
+Richard Nixon;Nixon;president;1969;usa,president,person;President of USA since 20/1/1969;;https://en.wikipedia.org/wiki/Richard_Nixon;20/1/1969
+Gerald Ford;Ford;president;1974;usa,president,person;President of USA since 9/8/1974;;https://en.wikipedia.org/wiki/Gerald_Ford;9/8/1974
+Jimmy Carter;Carter;president;1977;usa,president,person;President of USA since 20/01/1977;;https://en.wikipedia.org/wiki/Jimmy_Carter;20/01/1977
+Ronald Reagan;Reagan;president;1981;usa,president,person;President of USA since 20/01/1981;;https://en.wikipedia.org/wiki/Ronald_Reagan;20/01/1981
+George H. W. Bush;Bush;president;1989;usa,president,person;President of USA since 20/01/1989;;https://en.wikipedia.org/wiki/George_H._W._Bush;20/01/1989
+Bill Clinton;Clinton;president;1993;usa,president,person;President of USA since 20/01/1993;;https://en.wikipedia.org/wiki/Bill_Clinton;20/01/1993
+George W. Bush;Bush;president;2001;usa,president,person;President of USA since 20/01/2001;;https://en.wikipedia.org/wiki/George_W._Bush;20/01/2001
+Barack Obama;Obama;president;2009;usa,president,person;President of USA since 20/01/2009;;https://en.wikipedia.org/wiki/Barack_Obama;20/01/2009
+Donald Trump;Trump;president;2017;usa,president,person;President of USA since 20.01.2017;;https://en.wikipedia.org/wiki/Donald_Trump;20.01.2017
+Joe Biden;Biden;president;2021;usa,president,person;President of USA since 20.01.2021;;https://en.wikipedia.org/wiki/Joe_Biden;20.01.2021
+Donald Trump (2nd term);Trump;president;2025;usa,president,person;President of USA since 20.01.2025;;https://en.wikipedia.org/wiki/Donald_Trump;20.01.2025

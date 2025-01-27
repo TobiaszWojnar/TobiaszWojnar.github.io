@@ -24,9 +24,6 @@ const Event = ({
   const selectorTitle =
     "_" + title.replace(/\s+/g, "-").replace(/[^\w\s]/gi, "");
 
-  if (wikiLink) {
-    console.log(wikiLink);
-  }
   return (
     <>
       <div
