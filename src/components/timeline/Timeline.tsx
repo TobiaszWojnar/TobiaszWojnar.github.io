@@ -22,11 +22,10 @@ const Timeline = ({
   timePeriods: TimePeriodDataType[];
 }) => {
   const { zoomLvl, startDate, endDate } = useContext(TimelineContext);
-  const ARROW_KEY_MOVE_OFFSET = zoomLvl / 2;
+  const arrowKeyMveOffset = zoomLvl / 2;
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
-    // e.preventDefault();
     if (wrapperRef.current) {
       wrapperRef.current.scrollLeft += e.deltaY;
     }
@@ -35,10 +34,10 @@ const Timeline = ({
     if (wrapperRef.current) {
       switch (e.key) {
         case "ArrowRight":
-          wrapperRef.current.scrollLeft += ARROW_KEY_MOVE_OFFSET;
+          wrapperRef.current.scrollLeft += arrowKeyMveOffset;
           break;
         case "ArrowLeft":
-          wrapperRef.current.scrollLeft -= ARROW_KEY_MOVE_OFFSET;
+          wrapperRef.current.scrollLeft -= arrowKeyMveOffset;
           break;
         default:
           break;

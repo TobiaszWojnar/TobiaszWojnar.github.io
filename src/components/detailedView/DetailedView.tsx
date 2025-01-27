@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import s from "./style.module.css";
 
 const DetailedView = ({ content, setContent }) => {
   if (!content) {
@@ -10,22 +11,13 @@ const DetailedView = ({ content, setContent }) => {
     return (
       <>
         <div
-          className="header"
-          style={{ display: "flex", justifyContent: "space-between" }}
+          className={s.header}
         >
           <h1>{title}</h1>
           <button
             onClick={() => setContent(null)}
             autoFocus
-            style={{
-              width: "2em",
-              height: "2em",
-              backgroundColor: "var(--DarkRed)",
-              border: "0.25em solid black",
-              margin: "0.25em",
-              color: "var(--BackgroundColor)",
-              fontSize: "0.8em",
-            }}
+            className={s.button}
           >
             X
           </button>
@@ -47,25 +39,30 @@ const DetailedView = ({ content, setContent }) => {
   const renderWikiFrame = () => {
     return wikiLink ? (
       <>
-        <div className="frame-wrapper" style={{ flexGrow: 1 }}>
           <iframe
+            className={s.iframe}
             title={title}
             src={`${wikiLink}#mw-content-text`}
-            style={{ width: "100%", height: "100%", border: "none" }}
-            autoFocus
           />
-        </div>
         <br />
       </>
     ) : (
       <></>
     );
   };
+  const handleClick = (e: KeyboardEvent) => {
+    switch(e.key){
+      case "Escape":
+        setContent(null);
+        break;
+      default:
+        break;
+    }
+  }
   return (
     <Modal isOpen={content ?? false}>
       <div
-        className="modal-wrapper"
-        style={{ height: "100%", display: "flex", flexDirection: "column" }}
+        className={s["modal-wrapper"]} onKeyDown={handleClick}
       >
         {renderHeader()}
         {renderDescription()}

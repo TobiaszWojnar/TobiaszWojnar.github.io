@@ -54,16 +54,17 @@
   * [ ] short description
   * [ ] wiki links
 
-## 9 TODO
-* [ ] Clean code
+## 9 &check;
+* [X] custon useFetchCSV hook
+* [X] Clean code
   * [X] rename useEffect for fetching data
-  * [ ] extract constants outside components
-* [ ] Modal
+  * [X] extract constants outside components
+* [X] Modal
   * [X] Wiki
   * [X] Add style
-  * [ ] extract style
-  * [ ] keyboard capture - exit on esc
-* [ ] Data
+  * [X] extract style
+  * [X] keyboard capture - exit on esc
+* [X] Data
   * [X] Short text
     * [X] pln presidents
     * [X] pln kings
@@ -151,12 +152,11 @@
 * Expandable events - with sub events connected to them
 * Ensure Accessibility
   * HTMLs tags
-    * https://www.w3schools.com/tags/tag_a.asp
     * https://www.w3schools.com/tags/tag_title.asp
     * https://www.w3schools.com/tags/tag_select.asp
     * https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_meter
   * Labels
 * Properly use assets and cite sources
-* On open app it moves to more interesting place than midle ages
-* Navigatin by click and drop
+* On open app it moves to more interesting place than middle ages
+* Navigation by click and drop
 * use css BEM
